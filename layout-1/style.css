@@ -1,0 +1,76 @@
+body{
+    margin: o;
+    background-color: beige;
+}
+
+.box{
+    outline: 1px solid navy;
+    width: 200px;
+    padding: 30px;
+}
+
+.box p{
+    color: beige;
+    background-color: navy;
+    text-align: center;
+}
+
+.one{
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+.one span{
+    position: relative;
+    left: 1px;
+    top: -2px;
+}
+
+.two{
+    position: absolute;
+    left: 290px;
+    top: 135px;
+    /* left: 0px;
+    top: 0px; */
+    /* biggest downside is that position may vary on different screens so not the best to locate items */
+}
+
+.three{
+    position: fixed;
+    left: 700px;
+    top: 2px;
+}
+
+.five{
+    position: sticky;
+    top: 0px;
+}
+
+.six{
+    height: 1500px;
+}
+
+.seven{
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+    height: 50vh;
+    position: relative;
+}
+
+.sevenChild{
+    outline: 1px black dotted;
+    width: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+
+.sevenChild p{
+    background-color: crimson;
+    color:beige;
+}
+
+

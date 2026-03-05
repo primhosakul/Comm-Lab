@@ -1,0 +1,122 @@
+/* INTRO PAGE */
+.intro {
+    margin: 0;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-box {
+    text-align: center;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.enter a {
+    padding: 10px 20px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+}
+
+.enter a:hover{
+    outline: 1px solid white;
+    background-color: white;
+    color: black;
+}
+
+/* GALAXY PAGE */
+.galaxy {
+    margin: 0;
+    background-color: #0b0f2a;
+}
+
+.map {
+    width: 2000px;
+    height: 2000px;
+    position: relative;
+}
+
+/* Base star */
+.star {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: white;
+}
+
+/* Different Shapes */
+.circle {
+    border-radius: 50%;
+}
+
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid white;
+    background-color: transparent;
+}
+
+.diamond {
+    transform: rotate(45deg);
+}
+
+/* CIRCUIT PAGE */
+
+.circuit-page {
+    margin: 0;
+    background-color: #000000;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circuit-container {
+    width: 400px;
+    padding: 30px;
+    border: 2px solid white;
+}
+
+.circuit-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 1px;
+}
+
+/* .info-box p {
+    margin: 10px 0;
+} */
+
+.back-button {
+    margin-top: 25px;
+}
+
+.back-button a {
+    padding: 8px 15px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+}
+
+.back-button a:hover{
+    outline: 1px solid white;
+    background-color: white;
+    color: black;
+}

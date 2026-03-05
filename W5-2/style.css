@@ -1,0 +1,27 @@
+.ferrari{
+    width: 200px;
+    margin-left: 3px;
+    margin-top: 2px;
+    /* margin: auto; */
+}
+
+.ferrariwrap{
+    border: 2px dashed crimson;
+    width: 205px;
+    margin-bottom: 10px;
+    margin-left: 125px;
+    display: inline-block;
+}
+
+.ferrariwrap:last-child{
+    margin-bottom: 0px;
+}
+
+.ferrariwrap:hover{
+    border: 2px solid darkred;
+}
+
+h1{
+    margin-left: 42%;
+}
+

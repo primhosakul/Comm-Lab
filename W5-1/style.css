@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+p {
+    color: darkblue;
+    background-color: beige;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    margin: 0;
+}
+
+div {
+    /* border-width: 3px;
+   border-color: navy;
+   border-style: solid; */
+
+    border: 3px solid navy;
+    width: 200px;
+    /* margin: 30px; */
+    margin-left: 600px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: beige;
+}
+
+/* only the element in side div will change colour
+div p {
+    background-color: cadetblue;
+} */
+
+/* span{
+text-decoration:underline;
+} */
+
+.highlight1 {
+    color: darkred;
+}
+
+#specialParagraph{
+    border: grey 4px dotted;
+}

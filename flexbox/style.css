@@ -1,0 +1,25 @@
+body{
+    background-color: beige;
+}
+
+.container{
+    display: flex;
+    outline: 1px navy dotted;
+    justify-content:  center;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap;
+    flex-direction: column-reverse; */
+}
+
+.item{
+    width: 200px;
+    outline: 1px solid crimson;
+}
+
+.second{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

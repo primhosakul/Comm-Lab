@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+.left-icons,
+.right-icons {
+    background-color: blue;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    font-size: 28px;
+
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 20%;
+    border: 1px solid black;
+    padding: 40px;
+    min-height: 200px;
+    flex-grow: 4;
+    
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

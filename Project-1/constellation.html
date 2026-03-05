@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="space">
+    <div class="map">
+
+        <!-- Stars (Circuits) -->
+        <div class="star" style="top:200px; left:300px;" onclick="showCircuit('Monza')"></div>
+        <div class="star" style="top:500px; left:800px;" onclick="showCircuit('Suzuka')"></div>
+        <div class="star" style="top:900px; left:400px;" onclick="showCircuit('Silverstone')"></div>
+        <div class="star" style="top:1200px; left:1100px;" onclick="showCircuit('Spa')"></div>
+        <div class="star" style="top:1500px; left:200px;" onclick="showCircuit('Monaco')"></div>
+
+    </div>
+
+    <script>
+        function showCircuit(name) {
+            alert("You selected: " + name + " Circuit");
+        }
+    </script>
+</body>
+</html>

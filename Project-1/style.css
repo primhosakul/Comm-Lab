@@ -1,0 +1,55 @@
+/* Home Page */
+.home {
+    margin: 0;
+    height: 100vh;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+.center-box {
+    margin-top: 200px;
+}
+
+.enter-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+}
+
+/* Space Page */
+.space {
+    margin: 0;
+    background: radial-gradient(circle at 30% 40%, #2b1055, transparent 40%),
+                radial-gradient(circle at 70% 60%, #1b2735, transparent 40%),
+                linear-gradient(#000000, #090a0f);
+}
+
+/* Large scrollable map */
+.map {
+    width: 2000px;
+    height: 2000px;
+    position: relative;
+}
+
+/* Stars */
+.star {
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+
+.star:hover {
+    transform: scale(1.5);
+}
+
+
+
+
