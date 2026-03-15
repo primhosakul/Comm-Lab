@@ -1,64 +1,200 @@
-/* INTRO PAGE */
-.intro {
+/* index page */
+body {
     margin: 0;
-    background-color: black;
-    color: white;
-    height: 100vh;
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.leftNav {
+    display: flex;
     align-items: center;
 }
 
-.intro-box {
-    text-align: center;
+.left p {
+    margin-right: 15px;
 }
 
-.title {
-    font-size: 40px;
-    font-weight: bold;
+
+.centerNav {
+    padding-left: 70px;
 }
 
-.subtitle {
-    font-size: 20px;
-    margin-bottom: 70px;
+.rightNav {
+    display: flex;
+    align-items: center;
 }
 
-.enter a {
+.rightNav p {
+    margin-left: 20px;
+    
+}
+
+.rightNav a{
+    color: #d83933;
+    text-decoration: none;
+}
+
+.content {
+    background-image: url("images/moonbg.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    padding: 80px;
+}
+
+.contentF1 {
+    background-image: url("images/shanghaigp.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    padding: 80px;
+}
+
+
+.searchContainer {
+    padding: 20px;
+}
+
+.searchContainer input {
+    width: 100%;
+    padding: 8px;
+    background: #222;
+    border: 1px solid #444;
+    color: white;
+}
+
+.content h1 {
+    margin-top: 100px;
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+#desc {
+    margin-left: 10px;
+    font-size: 18px;
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+#button {
+    font-size: 22px;
+    outline: 1px solid #d83933;
+    color: white;
+    background-color: #d83933;
+    display: inline-block;
     padding: 10px 20px;
-    border: 1px solid white;
+    margin-left: 10px;
+}
+
+#button:hover {
+    font-size: 22px;
+    color: #d83933;
+    background-color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+
+.infoStrip {
+    margin-top: 100px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.small {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.infoItem a{
     color: white;
     text-decoration: none;
 }
 
-.enter a:hover{
-    outline: 1px solid white;
-    background-color: white;
-    color: black;
+.infoItem a:hover{
+    color: #d83933;
 }
 
-/* GALAXY PAGE */
-.galaxy {
-    margin: 0;
-    background-color: #0b0f2a;
+/* f1 page */
+
+
+
+.contentF1 {
+    color: black;
+    background-image: url("images/shanghaigp.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    padding: 80px;
 }
+
+.smallF1 {
+    font-size: 12px;
+    color: white;
+    background-color: #444;
+    margin-bottom: 10px;
+}
+
+.infoItemF1 a{
+    color: black;
+    text-decoration: none;
+}
+
+.infoItemF1 a:hover{
+    color: #d83933;
+}
+
+/* galaxy page */
+
+/* MAP */
+.galaxy {
+    margin: 1;
+    background: radial-gradient(circle at 30% 40%, #2b1055, transparent 40%),
+        radial-gradient(circle at 70% 60%, #1b2735, transparent 40%),
+        linear-gradient(#000000, #090a0f);
+    /* .galaxy-blend-mode: screen; */
+}
+
+
 
 .map {
-    width: 2000px;
-    height: 2000px;
     position: relative;
+    width: 1500px;
+    height: 3000px;
 }
 
-/* Base star */
+/* stars */
 .star {
     width: 20px;
     height: 20px;
     position: absolute;
     background-color: white;
+    filter: drop-shadow(0 0 10px white);
 }
 
-/* Different Shapes */
+
+.star:hover {
+    transform: scale(1.5);
+}
+
+/* stars shapes */
 .circle {
     border-radius: 50%;
+    box-shadow: 0 0 10px white;
 }
 
 
@@ -69,13 +205,164 @@
     border-right: 10px solid transparent;
     border-bottom: 20px solid white;
     background-color: transparent;
+    filter: drop-shadow(0 0px 10px white);
+}
+
+.square {
+    filter: drop-shadow(0 0px 10px white);
 }
 
 .diamond {
     transform: rotate(45deg);
+    filter: drop-shadow(0 0px 10px white);
 }
 
-/* CIRCUIT PAGE */
+/* locations of circuits & stars */
+.aus {
+    position: relative;
+    top: 20px;
+    left: 110px;
+}
+
+.japan {
+    position: relative;
+    top: 200px;
+    left: 1600px;
+}
+
+.china {
+    position: relative;
+    top: -170px;
+    left: 3500px;
+}
+
+.bahrain {
+    position: relative;
+    top: 250px;
+    left: 3000px;
+}
+
+.baku {
+    position: relative;
+    top: -50px;
+    left: 4600px;
+}
+
+.saudi {
+    position: relative;
+    top: -80px;
+    left: 500px;
+}
+
+.miami {
+    position: relative;
+    top: 150px;
+    left: 2300px;
+}
+
+.canada {
+    position: relative;
+    top: 100px;
+    left: 5300px;
+}
+
+.monaco {
+    position: relative;
+    top: 250px;
+    left: 3900px;
+}
+
+.madrid {
+    position: relative;
+    top: -1000px;
+    left: 5700px;
+}
+
+.barcelona {
+    position: relative;
+    top: 10px;
+    left: 7000px;
+}
+
+.austria {
+    position: relative;
+    top: -300px;
+    left: 1000px;
+}
+
+.silverstone {
+    position: relative;
+    top: 10px;
+    left: 2800px;
+}
+
+.hungary {
+    position: relative;
+    top: -40px;
+    left: 5800px;
+}
+
+.spa {
+    position: relative;
+    top: -1600px;
+    left: 7300px;
+}
+
+.texas {
+    position: relative;
+    top: -2500px;
+    left: 6800px;
+}
+
+.monza {
+    position: relative;
+    top: -600px;
+    left: 70px;
+}
+
+.dutch {
+    position: relative;
+    top: -2200px;
+    left: 6400px;
+}
+
+.singapore {
+    position: relative;
+    top: -1200px;
+    left: 7800px;
+}
+
+.lasVegas {
+    position: relative;
+    top: -3200px;
+    left: 7900px;
+}
+
+.mexico {
+    position: relative;
+    top: -2000px;
+    left: 2000px;
+}
+
+.brazil{
+    position: relative;
+    top: -3100px;
+    left: 1500px;
+}
+
+.qatar{
+    position: relative;
+    top: -3900px;
+    left: 2500px;
+}
+
+.abudhabi{
+    position: relative;
+    top: -3500px;
+    left: 3900px;
+}
+
+/* circuit info pages*/
 
 .circuit-page {
     margin: 0;
@@ -100,6 +387,8 @@
     margin-top: 1px;
 }
 
+
+
 /* .info-box p {
     margin: 10px 0;
 } */
@@ -115,7 +404,7 @@
     color: white;
 }
 
-.back-button a:hover{
+.back-button a:hover {
     outline: 1px solid white;
     background-color: white;
     color: black;

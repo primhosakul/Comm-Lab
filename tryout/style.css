@@ -1,0 +1,97 @@
+/* --- Core Sliding Logic --- */
+#nav-toggle { display: none; }
+
+.sidebar {
+  position: fixed;
+  top: 0; left: -320px;
+  width: 320px; height: 100%;
+  background: #111; color: white;
+  transition: transform 0.4s ease;
+  z-index: 1000;
+}
+
+.page-content {
+  width: 100%; 
+  min-height: 100vh;
+  background: #050505; color: white;
+  transition: transform 0.4s ease;
+}
+
+#nav-toggle:checked ~ .sidebar, 
+#nav-toggle:checked ~ .page-content {
+  transform: translateX(320px);
+}
+
+/* --- Top Header (Horizontal Nav) --- */
+.top-nav {
+  display: flex;
+  justify-content: space-between; /* Pushes content to sides */
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #333;
+}
+
+.left-section { display: flex; align-items: center; gap: 15px; }
+
+.menu-icon { 
+  cursor: pointer; 
+  font-size: 24px; 
+  user-select: none; 
+}
+
+.logo-text { font-weight: bold; letter-spacing: 2px; }
+
+.right-section a {
+  color: #ccc;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+/* --- Sidebar Tabs & Search --- */
+.search-container { padding: 20px; }
+.search-container input { 
+  width: 100%; padding: 8px; background: #222; border: 1px solid #444; color: white; 
+}
+
+.sidebar input[type="radio"] { display: none; }
+.tab-header { display: flex; border-bottom: 1px solid #333; }
+.tab-label { flex: 1; padding: 15px; text-align: center; cursor: pointer; color: #888; font-size: 12px; }
+
+.tab-content { display: none; padding: 20px; }
+#tab1:checked ~ .content1, #tab2:checked ~ .content2 { display: block; }
+#tab1:checked ~ .tab-header .tab-label:nth-child(1),
+#tab2:checked ~ .tab-header .tab-label:nth-child(2) { color: white; border-bottom: 2px solid white; }
+
+/* Container provides the hover area */
+.reveal-container {
+    width: 400px;
+    height: 300px;
+    margin: 50px auto;
+    background: #e0e0e0;      /* Visible grey box so you know where to hover */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+/* Image starts as a 10px circular "dot" */
+.reveal-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    /* Creates the initial small circle mask */
+    clip-path: circle(5px at center); 
+    
+    /* Animates the mask expanding */
+    transition: clip-path 0.7s ease-in-out;
+}
+
+/* When the container is hovered, reveal the full image */
+.reveal-container:hover .reveal-img {
+    clip-path: circle(100% at center);
+}

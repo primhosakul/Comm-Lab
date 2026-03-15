@@ -20,12 +20,19 @@
     color: white;
 }
 
+
+
 /* Space Page */
+
+
 .space {
-    margin: 0;
-    background: radial-gradient(circle at 30% 40%, #2b1055, transparent 40%),
-                radial-gradient(circle at 70% 60%, #1b2735, transparent 40%),
-                linear-gradient(#000000, #090a0f);
+    margin-top: 1;
+    margin-left: 3;
+    background: radial-gradient(circle at 30% 40%, #2b1055 0%, #000000 70%),
+    radial-gradient(circle at 70% 60%, #1b2735 0%, #000000 70%),
+    linear-gradient(#000000, #090a0f);
+    
+
 }
 
 /* Large scrollable map */
@@ -43,7 +50,6 @@
     border-radius: 50%;
     position: absolute;
     cursor: pointer;
-    box-shadow: 0 0 10px white;
 }
 
 .star:hover {

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <!-- The invisible switch -->
+<input type="checkbox" id="nav-toggle">
+
+<!-- 1. The Sidebar -->
+<div class="sidebar">
+  <div class="search-container">
+    <input type="text" placeholder="Search objects...">
+  </div>
+  
+  <input type="radio" name="tabs" id="tab1" checked>
+  <input type="radio" name="tabs" id="tab2">
+
+  <div class="tab-header">
+    <label for="tab1" class="tab-label">OBJECTS</label>
+    <label for="tab2" class="tab-label">SETTINGS</label>
+  </div>
+
+  <div class="tab-content content1">Explore the stars...</div>
+  <div class="tab-content content2">Adjust your view...</div>
+</div>
+
+<!-- 2. The Main Page with Top Header -->
+<div class="page-content">
+  <header class="top-nav">
+    <div class="left-section">
+      <label for="nav-toggle" class="menu-icon">☰</label>
+      <span class="logo-text">STELLARGRID</span>
+    </div>
+    <div class="right-section">
+      <a href="#">Observation Log</a>
+      <a href="#">Help</a>
+    </div>
+  </header>
+
+  <main class="hero">
+    <h2>The Night Sky</h2>
+  </main>
+</div>
+
+
+
+</body>
+</html>
