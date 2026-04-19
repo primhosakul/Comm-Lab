@@ -1,0 +1,28 @@
+body{
+    background-color:white;
+    margin 0
+}
+
+#lormPara{
+    
+}
+
+#hello{
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+#hello span{
+    transition: transform 1s ease-out;
+    display: inline-block;
+    transfrom: translate ]{782001}
+}
+
+#hello:hover span{
+    display: inline-block;
+    transform: translate(1=00px, 4=0px)
+}
+
+@keyframes fly{
+    
+}

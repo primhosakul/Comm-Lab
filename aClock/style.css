@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background: #0d0d0d;
+  overflow: hidden;
+  font-family: monospace;
+}
+
+.wave {
+  position: absolute;
+  width: 200%;
+  height: 120px;
+  left: 0;
+  overflow: hidden;
+}
+
+/* wave shape */
+.wave::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 100%;
+
+  background:
+    radial-gradient(circle at 50% 100%, currentColor 20%, transparent 21%) repeat-x,
+    radial-gradient(circle at 50% 0%, currentColor 20%, transparent 21%) repeat-x;
+
+  background-size: 120px 70px;
+  background-position: 0 0, 60px 70px;
+}
+
+/* layers */
+.hour { top: 35%; color: #333; }
+.minute { top: 50%; color: #777; }
+.second { top: 65%; color: white; }
+
+/* time display */
+#timeDisplay {
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 2px;
+}
+
+/* button */
+#soundBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+#soundBtn:active {
+  transform: scale(0.95);
+}
