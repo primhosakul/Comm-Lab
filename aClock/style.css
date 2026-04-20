@@ -13,7 +13,7 @@ body {
   overflow: hidden;
 }
 
-/* wave shape */
+
 .wave::before {
   content: "";
   position: absolute;
@@ -28,12 +28,11 @@ body {
   background-position: 0 0, 60px 70px;
 }
 
-/* layers */
+
 .hour { top: 35%; color: #333; }
 .minute { top: 50%; color: #777; }
 .second { top: 65%; color: white; }
 
-/* time display */
 #timeDisplay {
   position: fixed;
   bottom: 30px;
@@ -44,7 +43,7 @@ body {
   letter-spacing: 2px;
 }
 
-/* button */
+
 #soundBtn {
   position: fixed;
   top: 20px;

@@ -8,7 +8,7 @@ let soundBtn = document.getElementById("soundBtn");
 
 let isPlaying = false;
 
-// 🔊 toggle button
+
 soundBtn.addEventListener("click", function(){
 
   if(isPlaying === false){
@@ -38,12 +38,12 @@ function getTheTime(){
     let s = now.getSeconds();
     let ms = now.getMilliseconds();
 
-    // smooth time
+   
     let secP = (s + ms / 1000) / 60;
     let minP = (m + secP) / 60;
     let hrP = (h + minP) / 24;
 
-    // 🌊 natural motion
+    
     let waveOffset = Math.sin(secP * Math.PI * 2) * 20;
 
     secondWave.style.transform =
@@ -55,7 +55,7 @@ function getTheTime(){
     hourWave.style.transform =
       "translateX(" + (-(hrP * 80 + waveOffset * 0.2)) + "px)";
 
-    // update time
+   
     let timeText = format(h) + ":" + format(m) + ":" + format(s);
     timeDisplay.textContent = timeText;
 }
