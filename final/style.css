@@ -1,0 +1,323 @@
+/* Index */
+body.indexPage{
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+#sceneOne img {
+    width: 60vw; 
+    max-width: 800px; 
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#sceneOne:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+#startScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+/* Bedroom */
+
+body.bedroom {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.room {
+  width: 100vw;
+  height: 100vh;
+  background: url('images/Bedroom.png') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Bed styling */
+.bed {
+  position: absolute;
+  bottom: 200px;   /* adjust to match floor */
+  left: 43px;    /* adjust to align with original bed position */
+  width: 600px;   /* tweak size */
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+  filter: drop-shadow(0 20px 25px rgba(0,0,0,0.25));
+}
+
+.bed:hover {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+}
+
+/* cd player styling */
+.cdPlayer {
+    position: absolute;
+    bottom: 110px;
+    left: 790px;
+    width: 140px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+    filter: drop-shadow(0 20px 25px rgba(0,0,0,0.25));
+}
+
+.cdPlayer:hover {
+    transform: scale(1.1);
+    filter: brightness(1.05);
+}
+
+/* window styling */
+.curtain {
+    position: absolute;
+    bottom: 383px;
+    left: 525px;
+    width: 465px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+    filter: drop-shadow(0 20px 25px rgba(0,0,0,0.25));
+}
+
+.curtain:hover {
+    transform: scale(1.1);
+    filter: brightness(1.05);
+}
+
+/* desk styling */
+.desk {
+    position: absolute;
+    bottom: 240px;
+    left: 1000px;
+    width: 430px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+    filter: drop-shadow(0 20px 25px rgba(0,0,0,0.25));
+}
+
+.desk:hover {
+    transform: scale(1.1);
+    filter: brightness(1.05);
+}
+
+/* letters */
+#workskin {
+  overflow: hidden;
+}
+
+#workskin .trifold_letter {
+  position: relative;
+  margin: 0 auto;
+  font-size: 0;
+  font-family: Papyrus;
+  width: 600px;
+  height: 240px;
+  max-width: 80%;
+  min-width: 50%;
+  transition: 2s;
+  transition-delay: 2s;
+}
+
+#workskin .trifold_letter:hover {
+  height: 600px;
+  transition: 2s;
+}
+
+ /* THIS IS THE COVER, */
+#workskin .letter_cover {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  color: #383C45;
+  background: linear-gradient(344deg, rgba(255,254,242,1) 0%, rgba(248,246,224,1) 6%, rgba(244,241,215,1) 37%, rgba(238,235,203,1) 51%, rgba(247,245,222,1) 92%, rgba(255,254,242,1) 100%);
+  box-shadow: -2px 1px 5px 1px #00000010, 1px -2px 5px 1px #00000010;
+  border: solid #383C4550 1px;
+  width: 110%;
+  min-height: 240px;
+  max-height: 240px;
+  transition: 2s;
+  transition-delay: 2s;
+  z-index: 8;
+}
+
+#workskin .letter_cover:hover {
+  cursor: wait;
+}
+
+#workskin .trifold_letter:hover .letter_cover {
+  top: -100px;
+  left: 0px;
+  background: linear-gradient(344deg, rgba(254,252,231,1) 0%, rgba(251,249,226,1) 6%, rgba(244,241,215,1) 37%, rgba(236,232,195,1) 51%, rgba(249,246,213,1) 92%, rgba(255,253,225,1) 100%);
+  transform: rotate(15deg);
+  transition: 2s;
+  z-index: 0;
+}
+
+#workskin .letter_cover_text {
+  position: relative;
+  margin: 0 auto;
+  top: 50px;
+  max-width: 33%;
+  min-width: 30%;
+  font-size: 20px;
+  overflow: visible;
+}
+
+#workskin .letter_cover_text_top {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  max-width: 33%;
+  min-width: 30%;
+  font-size: 15px;
+  overflow: visible;
+}
+
+#workskin .letter_cover_stamp {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 75px;
+  width: 80px;
+  min-width: 10%;
+  max-width: 30%;
+  background: #f5f5f5;
+  background-image: URL(https://archive.org/download/touch_202010/TOUCH.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 3px;
+  box-shadow: 1px .5px 0px 0px #00000020, 1px .5px 0px 0px white inset;
+}
+
+/* THIS IS THE LETTER TOP, */
+#workskin .letter_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #383C45;
+  background: linear-gradient(176deg, rgba(255,251,240,1) 0%, rgba(245,235,207,1) 81%, rgba(255,248,228,1) 100%);
+  height: 200px;
+  max-width: 100%;
+  border-left: solid #383C4550 1px;
+  border-right: solid #383C4550 1px;
+  border-top: solid #383C4550 1px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  box-shadow: -5px -3px 10px 1px #00000010;
+  transition: 2s;
+  transition-delay: 2s;
+  z-index: 7;
+}
+
+#workskin .letter_top_text {
+  position: relative;
+  margin: 0 auto;
+  top: 20px;
+  height: 170px;
+  max-width: 90%;
+  font-size: 18px;
+  overflow: auto;
+}
+
+#workskin .trifold_letter:hover .letter_top {
+  left: -20px;
+  transform: skew(5deg);
+  transition: 2s;
+
+}
+
+ /* THIS IS THE LETTER MID, */
+#workskin .letter_mid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #383C45;
+  background: linear-gradient(169deg, rgba(214,205,179,1) 0%, rgba(233,224,197,1) 52%, rgba(255,248,229,1) 100%);
+  height: 200px;
+  max-width: 100%;
+  box-shadow: -5px -3px 10px 1px #00000010;
+  border-left: solid #383C4550 1px;
+  border-right: solid #383C4550 1px;
+  transition: 2s;
+  transition-delay: 2s;
+  z-index: 6;
+}
+
+#workskin .letter_mid_text {
+  position: relative;
+  margin: 0 auto;
+  top: -20px;
+  max-width: 90%;
+  height: 210px;
+  font-size: 18px;
+  overflow: auto;
+}
+
+#workskin.trifold_letter:hover .letter_mid {
+  top: 200px;
+  left: -20px;
+  transform: skew(-5deg);
+  transition: 2s;
+
+}
+
+#workskin.letter_bot {
+  position: absolute;
+  top: 0px;
+  left: .1px;
+  color: #383C45;
+  background: linear-gradient(353deg, rgba(255,251,240,1) 0%, rgba(242,231,201,1) 79%, rgba(255,248,228,1) 100%);
+  height: 200px;
+  max-width: 100%;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-left: solid #383C4550 1px;
+  border-right: solid #383C4550 1px;
+  border-bottom: solid #383C4550 1px;
+  box-shadow: -5px -3px 10px 1px #00000010;
+  transition: 2s;
+  transition-delay: 2s;
+  z-index: 5;
+}
+
+#workskin.letter_bot_text {
+  position: relative;
+  top: -20px;
+  margin: 0 auto;
+  max-width: 90%;
+  height: 160px;
+  font-size: 18px;
+  overflow: auto;
+}
+
+#workskin .trifold_letter:hover .letter_bot {
+  top: 400px;
+  left: -20px;
+  transition: 2s;
+  transform: skew(5deg);
+}
+ 
