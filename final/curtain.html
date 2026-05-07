@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curtain Scene</title>
+
+    <link rel="stylesheet" href="curtain.css">
+    <script src="curtain.js" defer></script>
+</head>
+
+<body>
+
+    <!-- OVERLAY -->
+    <div id="overlay">
+        <h1>reminiscing the past</h1>
+        <p>click to continue</p>
+    </div>
+
+    <!-- VIDEO -->
+    <video id="bgVideo" loop muted playsinline>
+        <source src="curtainVideo_short.mp4" type="video/mp4">
+    </video>
+
+    <!-- AUDIO -->
+    <audio id="bgMusic" loop>
+        <source src="audios/ribsRefrain.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- BUTTONS -->
+    <div class="controls">
+
+        <button id="audioBtn">
+            Play Audio
+        </button>
+
+        <button id="backBtn">
+            Back
+        </button>
+
+    </div>
+
+</body>
+
+</html>

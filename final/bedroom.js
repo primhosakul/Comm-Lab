@@ -36,30 +36,52 @@ desk.addEventListener("mouseleave", () =>{
     desk.style.transform = "scale(1)";
 });
 
-
 const bgMusicBedroom = document.getElementById("bgMusicBedroom");
 
+// --- 1. Hover Effects (Simplified with a loop) ---
+const interactiveItems = [bed, cdPlayer, curtain, desk];
+
+interactiveItems.forEach(item => {
+    item.addEventListener("mouseenter", () => {
+        item.style.transform = "scale(1.12)";
+    });
+    item.addEventListener("mouseleave", () => {
+        item.style.transform = "scale(1)";
+    });
+});
+
+// --- 2. Music Setup ---
+bgMusicBedroom.volume = 0.4;
+
+// Auto-play music on the first click anywhere on the page (browser requirement)
 window.addEventListener("click", () => {
-  bgMusicBedroom.volume = 0.4;
-  bgMusicBedroom.play();
+    if (bgMusicBedroom.paused) {
+        bgMusicBedroom.play();
+    }
 }, { once: true });
 
-// BED → maybe sleep page
-bed.addEventListener("click", () => {
-  window.location.href = "bed.html";
-});
+// --- 3. Click Actions ---
 
-// CD PLAYER → music page
+// CD PLAYER → Toggle Play/Pause (Removed redirect)
 cdPlayer.addEventListener("click", () => {
-  window.location.href = "music.html";
+    if (bgMusicBedroom.paused) {
+        bgMusicBedroom.play();
+        console.log("Music playing");
+    } else {
+        bgMusicBedroom.pause();
+        console.log("Music paused");
+    }
 });
 
-// CURTAIN → window/outside page
+// Other Navigation
+bed.addEventListener("click", () => {
+    window.location.href = "bed.html";
+});
+
 curtain.addEventListener("click", () => {
-  window.location.href = "curtain.html";
+    window.location.href = "curtain.html";
 });
 
-// DESK → letters page
 desk.addEventListener("click", () => {
-  window.location.href = "letter.html";
+    window.location.href = "letter.html";
 });

@@ -20,3 +20,4 @@ doorDiv.addEventListener("click", function() {
         window.location.href = "bedroom.html";
     };
 });
+
