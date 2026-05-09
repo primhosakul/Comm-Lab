@@ -11,13 +11,10 @@ body.bedroom {
     min-height: 100vh;
     min-width: 100vw;
     aspect-ratio: 16 / 9;
-
-    /* object-fit: cover; */
-
     background-color: aqua;
     /* background: url('images/Bedroom.png') no-repeat center center;
-  background-size: cover;
-  position: relative; */
+    background-size: cover;
+    position: relative; */
     overflow: hidden;
     transform: translate(-50%, -50%);
     position: absolute;
